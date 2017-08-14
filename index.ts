@@ -1,7 +1,5 @@
 import * as moment from 'moment'
 
-console.log('clock rock lala yaya')
-
 export const load = (jumpFm) => {
     const update = () => {
         jumpFm.statusBar.info('clock2',
