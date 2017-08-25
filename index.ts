@@ -5,14 +5,14 @@ import * as moment from 'moment'
 export const load = (jumpFm: JumpFm) => {
     const update = () => {
         const m = moment(Date.now())
-        jumpFm.statusBar.info('clock', {
-            txt: m.format(
+        jumpFm.statusBar.msg('clock')
+            .setType('info')
+            .setText(m.format(
                 jumpFm.settings.getStr('timeFormat', 'HH:mm:ss')
-            ),
-            dataTitle: m.format(
+            ))
+            .setTooltip(m.format(
                 jumpFm.settings.getStr('dateFormat', 'MM/DD/YYYY ')
-            ),
-        })
+            ))
     }
 
     update()
