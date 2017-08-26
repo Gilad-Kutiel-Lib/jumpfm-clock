@@ -1,1 +1,1 @@
-A clock plugin for the JumpFm file manager.
+A clock plugin for the [JumpFm](http://jumpfm.org/) file manager.
